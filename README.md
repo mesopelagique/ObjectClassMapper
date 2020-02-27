@@ -1,11 +1,17 @@
 # JSONDecoder
 
+[![language][code-shield]][code-url]
+[![language-top][code-top]][code-url]
+![code-size][code-size]
+[![release][release-shield]][release-url]
+[![license][license-shield]][license-url]
+
 Utility class to decode objects or collections into classes
 
 ## Creating the decoder
 
 ```4d
-$decoder:=cs.JSONDecoder.new()
+$decoder:=JSONDecoder()
 ```
 
 ## Decoding a simple object
@@ -89,3 +95,14 @@ $breakpointInstance:=$decoder.decode($json;cs.Breakpoint)
 ```
 
 `breakpointInstance.method` will be a `cs.Method` instance
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
+[code-top]: https://img.shields.io/github/languages/top/4d-for-ios/JSONDecoder.svg
+[code-size]: https://img.shields.io/github/languages/code-size/4d-for-ios/JSONDecoder.svg
+[code-url]: https://developer.4d.com/
+[release-shield]: https://img.shields.io/github/v/release/4d-for-ios/JSONDecoder
+[release-url]: https://github.com/4d-for-ios/JSONDecodere/releases/latest
+[license-shield]: https://img.shields.io/github/license/4d-for-ios/JSONDecoder
+[license-url]: LICENSE

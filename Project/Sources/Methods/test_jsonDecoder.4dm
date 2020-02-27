@@ -10,6 +10,7 @@ C_TEXT:C284($jsonString)
 
 C_OBJECT:C1216($decoder)
 $decoder:=cs:C1710.JSONDecoder.new()
+  // $decoder:=JSONDecoder()
 
   // Simple obj
 $jsonString:="{\"line\":2,\"method\":{\"type\":1,\"methodName\":\"folder_unboxing\"}}"
