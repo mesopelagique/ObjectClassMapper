@@ -99,10 +99,10 @@ $breakpointInstance:=$decoder.decode($json;cs.Breakpoint)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
-[code-top]: https://img.shields.io/github/languages/top/4d-for-ios/JSONDecoder.svg
-[code-size]: https://img.shields.io/github/languages/code-size/4d-for-ios/JSONDecoder.svg
+[code-top]: https://img.shields.io/github/languages/top/mesopelagique/JSONDecoder.svg
+[code-size]: https://img.shields.io/github/languages/code-size/mesopelagique/JSONDecoder.svg
 [code-url]: https://developer.4d.com/
-[release-shield]: https://img.shields.io/github/v/release/4d-for-ios/JSONDecoder
-[release-url]: https://github.com/4d-for-ios/JSONDecodere/releases/latest
-[license-shield]: https://img.shields.io/github/license/4d-for-ios/JSONDecoder
+[release-shield]: https://img.shields.io/github/v/release/mesopelagique/JSONDecoder
+[release-url]: https://github.com/mesopelagique/JSONDecodere/releases/latest
+[license-shield]: https://img.shields.io/github/license/mesopelagique/JSONDecoder
 [license-url]: LICENSE
