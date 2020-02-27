@@ -103,6 +103,6 @@ $breakpointInstance:=$decoder.decode($json;cs.Breakpoint)
 [code-size]: https://img.shields.io/github/languages/code-size/mesopelagique/JSONDecoder.svg
 [code-url]: https://developer.4d.com/
 [release-shield]: https://img.shields.io/github/v/release/mesopelagique/JSONDecoder
-[release-url]: https://github.com/mesopelagique/JSONDecodere/releases/latest
+[release-url]: https://github.com/mesopelagique/JSONDecoder/releases/latest
 [license-shield]: https://img.shields.io/github/license/mesopelagique/JSONDecoder
-[license-url]: LICENSE
+[license-url]: LICENSE.md
