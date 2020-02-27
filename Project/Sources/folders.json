@@ -1,0 +1,12 @@
+﻿{
+	"test": {
+		"methods": [
+			"test_jsonDecoder"
+		],
+		"classes": [
+			"Breakpoint",
+			"Method"
+		]
+	},
+	"trash": {}
+}
