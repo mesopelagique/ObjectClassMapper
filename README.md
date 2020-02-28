@@ -1,4 +1,4 @@
-# JSONDecoder
+# ObjectClassMapper
 
 [![language][code-shield]][code-url]
 [![language-top][code-top]][code-url]
@@ -11,14 +11,14 @@ Utility class to decode objects or collections into classes
 ## Creating the decoder
 
 ```4d
-$decoder:=JSONDecoder()
+$mapper:=ObjectClassMapper()
 ```
 
 ## Decoding a simple object
 
 ### Getting object from JSON
 
-Here our is JSON definition
+Here our object definition as JSON
 
 ```
 	{
@@ -30,20 +30,20 @@ Here our is JSON definition
 	}
 ```
 
-We could parse this JSON to `C_OBJECT`
+That could be parsed to `C_OBJECT` if comming from string.
 
 ```4d
 $json:=JSON Parse($jsonString)
 ```
 
-Then decode it passing the destination class
+You can decode it passing the destination class.
 
 ```4d
 C_OBJECT(breakpointInstance)
-$breakpointInstance:=$decoder.decode($json;cs.Breakpoint)
+$breakpointInstance:=$mapper.map($json;cs.Breakpoint)
 ```
 
-We have a new instance of `cs.Breakpoint`
+We have created a new instance of `cs.Breakpoint` with `$breakpointInstance.line=2`, `$breakpointInstance.method.type=1`, ...
 
 ### Getting a collection of objects from JSON Array
 
@@ -71,10 +71,11 @@ We could parse this JSON to `C_COLLECTION`
 ```4d
 $json:=JSON Parse($jsonString)
 ```
- and decode to a collection of passed class
+ and decode to a collection of instances.
+ 
 ```4d
 C_COLLECTION(breapoints)
-$breapoints:=$decoder.decode($json;cs.Breakpoint)
+$breapoints:=$mapper.map($json;cs.Breakpoint)
 ```
 
 ### Decoding a subclass
@@ -85,16 +86,16 @@ Here we want to decode key `method` as `cs.Method` instance.
 
 ```4d
 Use (cs.Breakpoint)
-	cs.Breakpoint.coding:=New shared object("method";cs.Method.name)
+	cs.Breakpoint.classMapping:=New shared object("method";cs.Method.name)
 End use
 ```
 Then as usual we decode
 
 ```4d
-$breakpointInstance:=$decoder.decode($json;cs.Breakpoint)
+$breakpointInstance:=$mapper.map($json;cs.Breakpoint)
 ```
 
-`breakpointInstance.method` will be a `cs.Method` instance
+`$breakpointInstance.method` will be an instance of `cs.Method` 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
