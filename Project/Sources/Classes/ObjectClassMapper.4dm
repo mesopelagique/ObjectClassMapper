@@ -6,7 +6,7 @@ Class constructor
 		This:C1470.cs:=$1  // XXX check is class store?
 	End if 
 	
-Function map(/*object, class*/)
+Function map // (/*object, class*/)
 	C_VARIANT:C1683($0)
 	C_VARIANT:C1683($1)
 	C_OBJECT:C1216($2)
