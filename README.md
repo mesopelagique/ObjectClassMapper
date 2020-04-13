@@ -5,6 +5,7 @@
 ![code-size][code-size]
 [![release][release-shield]][release-url]
 [![license][license-shield]][license-url]
+[![discord][discord-shield]][discord-url]
 
 Utility class to decode objects or collections into classes
 
@@ -107,3 +108,7 @@ $breakpointInstance:=$mapper.map($json;cs.Breakpoint)
 [release-url]: https://github.com/mesopelagique/JSONDecoder/releases/latest
 [license-shield]: https://img.shields.io/github/license/mesopelagique/JSONDecoder
 [license-url]: LICENSE.md
+[discord-shield]: https://img.shields.io/badge/chat-discord-7289DA?logo=discord&style=flat
+[discord-url]: https://discord.gg/dVTqZHr
+[discord-shield]: https://img.shields.io/badge/chat-discord-7289DA?logo=discord&style=flat
+[discord-url]: https://discord.gg/dVTqZHr
